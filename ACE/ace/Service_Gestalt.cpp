@@ -5,7 +5,6 @@
 #include "ace/Service_Manager.h"
 #include "ace/Service_Types.h"
 #include "ace/Containers.h"
-#include "ace/Auto_Ptr.h"
 #include "ace/Reactor.h"
 #include "ace/Thread_Manager.h"
 #include "ace/DLL.h"
@@ -24,6 +23,8 @@
 #include "ace/TSS_T.h"
 #include "ace/Service_Gestalt.h"
 #include "ace/Svc_Conf_Param.h"
+#include <memory>
+
 #include <memory>
 
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
