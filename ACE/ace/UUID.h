@@ -24,6 +24,8 @@
 #include "ace/Synch_Traits.h"
 #include <memory>
 
+#include <memory>
+
 ACE_BEGIN_VERSIONED_NAMESPACE_DECL
 
 namespace ACE_Utils

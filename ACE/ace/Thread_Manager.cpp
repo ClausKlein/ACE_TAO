@@ -9,6 +9,8 @@
 #include "ace/Truncate.h"
 #include <memory>
 
+#include <memory>
+
 #if !defined (__ACE_INLINE__)
 #include "ace/Thread_Manager.inl"
 #endif /* __ACE_INLINE__ */
