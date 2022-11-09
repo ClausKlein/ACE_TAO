@@ -39,6 +39,7 @@ ipch/
 /build
 /ACE/build
 /TAO/build
+/MPC
 
 *.o
 *.res
