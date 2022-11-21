@@ -42,4 +42,4 @@ make c++17=1 -j 6 -C ${TAO_ROOT} #XXX -B
 # Build TAO/tests project
 make c++17=1 -j 6 -C ${TAO_ROOT}/tests
 
-sudo -E make  c++17=1 -j 6 -C ${TAO_ROOT} install
+sudo -E make c++17=1 -j 6 -C ${TAO_ROOT} install
