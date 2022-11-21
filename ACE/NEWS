@@ -1,5 +1,16 @@
+USER VISIBLE CHANGES BETWEEN ACE-7.0.10 and ACE-7.0.11
+======================================================
+
 USER VISIBLE CHANGES BETWEEN ACE-7.0.9 and ACE-7.0.10
 =====================================================
+
+. Add missing resource files for several DLLs on Windows
+
+. VxWorks runtime fixes
+
+. Various cleanup and using more C++11 features
+
+. Embarcadero C++ Builder 11.2 fixes
 
 USER VISIBLE CHANGES BETWEEN ACE-7.0.8 and ACE-7.0.9
 ====================================================
