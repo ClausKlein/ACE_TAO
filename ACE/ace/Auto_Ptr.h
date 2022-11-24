@@ -69,10 +69,8 @@ protected:
 ACE_END_VERSIONED_NAMESPACE_DECL
 
 #if !defined (ACE_LACKS_AUTO_PTR)
-#if 0
 #include <memory>
-using std::unique_ptr;
-#endif
+// NO! using std::unique_ptr;
 #else /* !ACE_LACKS_AUTO_PTR */
 #error ACE_LACKS_AUTO_PTR
 
