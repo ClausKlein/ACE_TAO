@@ -9,7 +9,7 @@ set -x
 # cd ACE_TAO
 # git clone https://github.com/DOCGroup/MPC.git
 
-#TODO: sudo apt-get --yes install libxerces-c-dev libssl-dev
+#TODO: brew install xerces-c openssl
 
 export ACE_ROOT=${PWD}/ACE
 export TAO_ROOT=${PWD}/TAO
@@ -18,11 +18,10 @@ export INSTALL_PREFIX=/usr/local
 ####
 export CC=`which gcc`
 export CXX=`which g++`
-platform_file='include $(ACE_ROOT)/include/makeinclude/platform_linux.GNU'
-#TBD platform_file='include $(ACE_ROOT)/include/makeinclude/platform_linux_clang.GNU'
+platform_file='include $(ACE_ROOT)/include/makeinclude/platform_macosx.GNU'
 
 # create $ACE_ROOT/ace/config.h
-echo '#include "ace/config-linux.h"' > ${ACE_ROOT}/ace/config.h
+echo '#include "ace/config-macosx.h"' > ${ACE_ROOT}/ace/config.h
 
 # create $ACE_ROOT/include/makeinclude/platform_macros.GNU
 echo ${platform_file} > ${ACE_ROOT}/include/makeinclude/platform_macros.GNU
@@ -30,8 +29,6 @@ echo CCFLAGS+=-std=c++17 >> ${ACE_ROOT}/include/makeinclude/platform_macros.GNU
 
 # Create $ACE_ROOT/bin/MakeProjectCreator/config/default.features
 echo 'ipv6=1' > ${ACE_ROOT}/bin/MakeProjectCreator/config/default.features
-echo 'xerces3=1' >> ${ACE_ROOT}/bin/MakeProjectCreator/config/default.features
-echo 'ssl=1' >> ${ACE_ROOT}/bin/MakeProjectCreator/config/default.features
 echo 'versioned_namespace=1' >> ${ACE_ROOT}/bin/MakeProjectCreator/config/default.features
 
 # Run mwc.pl on $(TAO_ROOT)/TAO_ACE.mwc

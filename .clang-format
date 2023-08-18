@@ -37,9 +37,7 @@ BraceWrapping:
   SplitEmptyNamespace: true
 # based on BreakBeforeBraces: GNU
 ColumnLimit: 123 # MAYBE up to 160
-#
-# XXX v13.0 only IndentAccessModifiers: true
-#
+IndentAccessModifiers: true
 IndentPPDirectives: AfterHash
 SortUsingDeclarations: false
 SpaceAfterTemplateKeyword: true
