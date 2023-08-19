@@ -25,7 +25,7 @@ echo '#include "ace/config-macosx.h"' > ${ACE_ROOT}/ace/config.h
 
 # create $ACE_ROOT/include/makeinclude/platform_macros.GNU
 echo ${platform_file} > ${ACE_ROOT}/include/makeinclude/platform_macros.GNU
-echo CCFLAGS+=-std=c++17 >> ${ACE_ROOT}/include/makeinclude/platform_macros.GNU
+echo CCFLAGS+=-std=c++20 >> ${ACE_ROOT}/include/makeinclude/platform_macros.GNU
 
 # Create $ACE_ROOT/bin/MakeProjectCreator/config/default.features
 echo 'ipv6=1' > ${ACE_ROOT}/bin/MakeProjectCreator/config/default.features
@@ -41,12 +41,12 @@ perl ${ACE_ROOT}/bin/mwc.pl -type gnuace ${TAO_ROOT}/tests/tests.mwc -workers 6
 perl ${ACE_ROOT}/bin/mwc.pl -type gnuace ${TAO_ROOT}/tests/IDL_Test -workers 6
 
 # Build TAO_ACE project
-make c++17=1 -j 6 -C ${TAO_ROOT}
+make c++20=1 -j 6 -C ${TAO_ROOT}
 
 # Build TAO/tests project
-make c++17=1 -j 6 -C ${TAO_ROOT}/tests
+make c++20=1 -j 6 -C ${TAO_ROOT}/tests
 
 # Build TAO/tests/IDL_Test project
-make c++17=1 -j 6 -C ${TAO_ROOT}/tests/IDL_Test
+make c++20=1 -j 6 -C ${TAO_ROOT}/tests/IDL_Test
 
-#TODO: sudo -E make c++17=1 -j 6 -C ${TAO_ROOT} install
+#TODO: sudo -E make c++20=1 -j 6 -C ${TAO_ROOT} install
