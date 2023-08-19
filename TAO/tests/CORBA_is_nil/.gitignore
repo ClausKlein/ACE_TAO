@@ -5,3 +5,8 @@
 .depend.CORBA_Is_Nil_idl_Idl1
 client
 server
+TestC.cpp
+TestC.h
+TestC.inl
+TestS.cpp
+TestS.h
